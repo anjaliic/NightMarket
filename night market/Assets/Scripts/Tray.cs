@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Tray : MonoBehaviour
 {
-    public GameObject GameMng;
+    public GameObject cam;
     public string currentScreen;
 
     Collider2D col;
-    public Camera cam;
     Transform tr;
 
     SpriteRenderer sp;
@@ -30,7 +29,7 @@ public class Tray : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentScreen = GameMng.gameObject.GetComponent<GameManager>().currentScreen;
+        currentScreen = cam.gameObject.GetComponent<CameraManager>().currentScreen;
         tr.transform.position = new Vector3(cam.transform.position.x, tr.position.y, tr.position.z);
 
         if(currentScreen != "prep" || (currentScreen == "prep" && itemsOnTray != 0))
@@ -44,16 +43,6 @@ public class Tray : MonoBehaviour
             sp.enabled = false;
         }
 
-        /*if(currentScreen == "prep" && itemsOnTray > 0)
-        {
-            cam.transform.position = new Vector3(cam.transform.position.x, -2.75f, cam.transform.position.z);
-            this.transform.position = new Vector3(tr.transform.position.x, -6.42f, tr.transform.position.z);
-        }
-        else
-        {
-            cam.transform.position = new Vector3(cam.transform.position.x, 0f, cam.transform.position.z);
-            this.transform.position = new Vector3(tr.transform.position.x, -3.66f, tr.transform.position.z);
-        }*/
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

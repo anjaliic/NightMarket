@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject GameMng;
+    public GameObject cam;
     public string currentScreen;
 
     public GameObject toFood;
@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentScreen = GameMng.gameObject.GetComponent<GameManager>().currentScreen;
+        currentScreen = cam.gameObject.GetComponent<CameraManager>().currentScreen;
 
         if(currentScreen == "prep")
         {

@@ -94,6 +94,7 @@
     <Compile Include="Assets\Lean\Touch\Extras\LeanSwipeBase.cs" />
     <Compile Include="Assets\Lean\Touch\Extras\LeanTwistRotate.cs" />
     <Compile Include="Assets\Lean\Touch\Extras\LeanTwistRotateAxis.cs" />
+    <Compile Include="Assets\Lean\Touch\Scripts\CameraManager.cs" />
     <Compile Include="Assets\Lean\Touch\Scripts\LeanFinger.cs" />
     <Compile Include="Assets\Lean\Touch\Scripts\LeanGesture.cs" />
     <Compile Include="Assets\Lean\Touch\Scripts\LeanSnapshot.cs" />
