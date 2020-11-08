@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class ButtonManager : MonoBehaviour
 {
-    Camera cam;
+    public Camera cam;
 
     void Start()
     {
         //finds & sets the Main Camera to cam
-        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        cam = cam.GetComponent<Camera>();
     }
 
     //On Click () function on Button component

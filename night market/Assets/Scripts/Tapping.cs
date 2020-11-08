@@ -10,12 +10,13 @@ public class Tapping : MonoBehaviour
     public bool choppable = true;
 
     
-
+    Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         col = GetComponent<Collider2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -33,6 +34,7 @@ public class Tapping : MonoBehaviour
                 {
                     
                     Debug.Log("chop");
+                    anim.SetTrigger("tap");
                     count++;
                 }
             }

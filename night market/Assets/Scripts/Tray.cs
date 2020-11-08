@@ -5,7 +5,6 @@ using UnityEngine;
 public class Tray : MonoBehaviour
 {
     public GameObject cam;
-    public string currentScreen;
 
     Collider2D col;
     Transform tr;
@@ -29,10 +28,10 @@ public class Tray : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentScreen = cam.gameObject.GetComponent<CameraManager>().currentScreen;
+        
         tr.transform.position = new Vector3(cam.transform.position.x, tr.position.y, tr.position.z);
 
-        if(currentScreen != "prep" || (currentScreen == "prep" && itemsOnTray != 0))
+        if(GameManager.Instance.currentScreen != "prep" || (GameManager.Instance.currentScreen == "prep" && itemsOnTray != 0))
         {
             col.enabled = true;
             sp.enabled = true;

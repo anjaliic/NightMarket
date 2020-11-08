@@ -5,7 +5,6 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public GameObject cam;
-    public string currentScreen;
 
     public GameObject toFood;
     public GameObject toPantry;
@@ -21,23 +20,22 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentScreen = cam.gameObject.GetComponent<CameraManager>().currentScreen;
 
-        if(currentScreen == "prep")
+        if(GameManager.Instance.currentScreen == "prep")
         {
             toFood.SetActive(true);
             toPantry.SetActive(true);
             fromFood.SetActive(false);
             fromPantry.SetActive(false);
         }
-        else if(currentScreen == "food")
+        else if(GameManager.Instance.currentScreen == "food")
         {
             toFood.SetActive(false);
             toPantry.SetActive(false);
             fromFood.SetActive(true);
             fromPantry.SetActive(false);
         }
-        else if (currentScreen == "pantry")
+        else if (GameManager.Instance.currentScreen == "pantry")
         {
             toFood.SetActive(false);
             toPantry.SetActive(false);

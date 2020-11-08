@@ -14,6 +14,7 @@ public class DragOnTray : MonoBehaviour
     public Camera cam;
 
     public float xpos;
+    public float zPos;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class DragOnTray : MonoBehaviour
         col = GetComponent<Collider2D>();
         tr = GetComponent<Transform>();
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        zPos = this.gameObject.transform.position.z;
     }
 
     // Update is called once per frame
@@ -46,7 +48,7 @@ public class DragOnTray : MonoBehaviour
             {
                 if (moveAllowed == true)
                 {
-                    transform.position = new Vector2(touchPosition.x, touchPosition.y);
+                    transform.position = new Vector3(touchPosition.x, touchPosition.y, zPos);
                 }
             }
             if (touch.phase == TouchPhase.Ended)
@@ -62,6 +64,11 @@ public class DragOnTray : MonoBehaviour
             //tr.transform.position = new Vector3((cam.transform.position.x - xpos), tr.position.y, tr.position.z);
             //maybe make object child of tray
             tr.transform.position = new Vector3(cam.transform.position.x, tr.position.y, tr.position.z);
+            if(this.gameObject.name == "mallet")
+            {
+                //malletActive == true
+                GameManager.Instance.malletActive = true;
+            }
         }
         else if (onTray == false && SceneManager.GetActiveScene().name == "Prep")
         {
