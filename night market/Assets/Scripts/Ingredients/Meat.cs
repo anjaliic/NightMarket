@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ingredient : MonoBehaviour
+public class Meat : MonoBehaviour
 {
     
     SpriteRenderer sprRend;
@@ -11,6 +11,9 @@ public class Ingredient : MonoBehaviour
     public GameObject equipment;
 
     public bool choppable;
+
+    public int tapsNeeded;
+    public int tapCount;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +24,16 @@ public class Ingredient : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (equipment.GetComponent<Tapping>().choppable == false)
+        /*if (equipment.GetComponent<Tapping>().choppable == false)
         {
             sprRend.sprite = newState;
+        }*/
+
+        if(tapsNeeded == tapCount)
+        {
+            sprRend.sprite = newState;
+            gameObject.tag = "mixable";
+            this.GetComponent<DragOnTray>().enabled = false;
         }
     }
 

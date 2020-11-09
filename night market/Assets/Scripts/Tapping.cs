@@ -7,10 +7,14 @@ public class Tapping : MonoBehaviour
     Collider2D col;
     int count = 0;
     public int chops;
-    public bool choppable = true;
-
+    //public bool choppable = true;
     
     Animator anim;
+
+    public GameObject ingredient;
+    public string interactionTag;
+
+    public bool canTap;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +23,27 @@ public class Tapping : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == interactionTag)
+        {
+            canTap = true;
+            ingredient = collision.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == interactionTag)
+        {
+            canTap = false;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(Input.touchCount > 0 && choppable == true)
+        if(Input.touchCount > 0 && canTap == true)
         {
             Touch touch = Input.GetTouch(0);
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
@@ -36,13 +57,14 @@ public class Tapping : MonoBehaviour
                     Debug.Log("chop");
                     anim.SetTrigger("tap");
                     count++;
+
+                    ingredient.GetComponent<Meat>().tapCount++;
                 }
             }
         }
 
         if(count == chops)
         {
-            choppable = false;
             Debug.Log("done chopping");
             
         }

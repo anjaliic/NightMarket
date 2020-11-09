@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class DragOnTray : MonoBehaviour
 {
@@ -69,14 +68,6 @@ public class DragOnTray : MonoBehaviour
                 //malletActive == true
                 GameManager.Instance.malletActive = true;
             }
-        }
-        else if (onTray == false && SceneManager.GetActiveScene().name == "Prep")
-        {
-            SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetActiveScene());
-        }
-        else if (onTray == false)
-        {
-            SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetActiveScene());
         }
     }
 }
