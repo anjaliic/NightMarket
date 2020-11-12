@@ -134,8 +134,9 @@ GameObject:
   - component: {fileID: 398358566}
   - component: {fileID: 398358565}
   - component: {fileID: 398358564}
+  - component: {fileID: 398358570}
   m_Layer: 0
-  m_Name: meat cube (2)
+  m_Name: meat
   m_TagString: tappable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274,6 +275,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &398358570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398358563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edce0edd64ef234bbdb96968d5a7cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &636445821
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,12 +399,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb15fd56a264dad4db3216ae9d694413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meat1: {fileID: 0}
-  meat2: {fileID: 0}
-  meat3: {fileID: 0}
-  mixesNeeded: 3
+  col1: {fileID: 0}
+  col2: {fileID: 0}
+  col3: {fileID: 0}
+  mixesNeeded: 5
+  mixMid: 0
   mixCount: 0
-  count: 0
+  mix1: 0
+  mix2: 0
+  mix3: 0
+  mixing: 1
+  meatballPrefab: {fileID: 8166857819518633523, guid: 73bfb23ae3a34434d8f571fb2e9957ff,
+    type: 3}
+  riceMid: {fileID: 0}
+  riceBall: {fileID: 0}
 --- !u!4 &1137289142
 Transform:
   m_ObjectHideFlags: 0
@@ -420,8 +441,9 @@ GameObject:
   - component: {fileID: 1228919771}
   - component: {fileID: 1228919770}
   - component: {fileID: 1228919769}
+  - component: {fileID: 1228919775}
   m_Layer: 0
-  m_Name: meat cube (1)
+  m_Name: meat
   m_TagString: tappable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,6 +582,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1228919775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228919768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edce0edd64ef234bbdb96968d5a7cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1812029116
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,8 +608,9 @@ GameObject:
   - component: {fileID: 1812029119}
   - component: {fileID: 1812029118}
   - component: {fileID: 1812029117}
+  - component: {fileID: 1812029123}
   m_Layer: 0
-  m_Name: meat cube
+  m_Name: meat
   m_TagString: tappable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -714,3 +749,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1812029123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812029116}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edce0edd64ef234bbdb96968d5a7cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -14,6 +14,7 @@ public class Meat : MonoBehaviour
 
     public int tapsNeeded;
     public int tapCount;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,7 @@ public class Meat : MonoBehaviour
             sprRend.sprite = newState;
             gameObject.tag = "mixable";
             this.GetComponent<DragOnTray>().enabled = false;
+            this.GetComponent<Mixable>().enabled = true;
         }
     }
 
