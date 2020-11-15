@@ -14,16 +14,16 @@ public class Tapping : MonoBehaviour
     public GameObject ingredient;
     public string interactionTag;
 
-    public bool canTap;
+    //public bool canTap;
 
     // Start is called before the first frame update
     void Start()
     {
-        col = GetComponent<Collider2D>();
+        col = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == interactionTag)
         {
@@ -38,12 +38,12 @@ public class Tapping : MonoBehaviour
         {
             canTap = false;
         }
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.touchCount > 0 && canTap == true)
+        if(Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);

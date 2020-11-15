@@ -38,7 +38,7 @@ public class DragOnTray : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
-                if (col == touchedCollider)
+                if (col == touchedCollider && touchedCollider.GetType() == typeof(BoxCollider2D))
                 {
                     moveAllowed = true;
                 }

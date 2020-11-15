@@ -8,6 +8,7 @@ TagManager:
   - cookware
   - tappable
   - mixable
+  - fireable
   layers:
   - Default
   - TransparentFX

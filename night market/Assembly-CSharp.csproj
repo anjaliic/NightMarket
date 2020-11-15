@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BreatheFire.cs" />
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\DetectInteractable.cs" />
     <Compile Include="Assets\Scripts\Draggable.cs" />
@@ -71,8 +72,10 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Ingredients.cs" />
     <Compile Include="Assets\Scripts\Meat.cs" />
+    <Compile Include="Assets\Scripts\Meatball.cs" />
     <Compile Include="Assets\Scripts\Mix.cs" />
     <Compile Include="Assets\Scripts\Mixable.cs" />
+    <Compile Include="Assets\Scripts\Rice.cs" />
     <Compile Include="Assets\Scripts\RiceballRecipe.cs" />
     <Compile Include="Assets\Scripts\Tapping.cs" />
     <Compile Include="Assets\Scripts\Tray.cs" />
