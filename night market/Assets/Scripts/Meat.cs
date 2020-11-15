@@ -35,7 +35,7 @@ public class Meat : MonoBehaviour
             sprRend.sprite = newState;
             gameObject.tag = "mixable";
             this.GetComponent<DragOnTray>().enabled = false;
-            this.GetComponent<Mixable>().enabled = true;
+
         }
     }
 

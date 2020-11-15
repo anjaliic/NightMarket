@@ -7,7 +7,11 @@ public class Ingredients : MonoBehaviour
 {
     public static Ingredients Instance { get; private set; }
 
-    public int meatCount;
+    public GameObject meat1;
+    public GameObject meat2;
+    public GameObject meat3;
+
+    public GameObject mix;
 
     private void Awake()
     {
@@ -22,11 +26,11 @@ public class Ingredients : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Update()
     {
-        if (collision.name == "meat")
+        if(meat1.tag == "mixable" && meat2.tag == "mixable" && meat3.tag == "mixable")
         {
-            meatCount++;
+            mix.GetComponent<Mix>().mixing = true;
         }
     }
 }

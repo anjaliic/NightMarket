@@ -44,19 +44,19 @@ public class Mix : MonoBehaviour
             {
                 //find meat cubes 
                 Collider2D touchedCollider1 = Physics2D.OverlapPoint(touchPosition);
-                if(col1 == null)
+                if(col1 == null && touchedCollider1.tag == "mixable")
                 {
                     col1 = touchedCollider1.gameObject;
                     mix1 = true;
                 }
                 Collider2D touchedCollider2 = Physics2D.OverlapPoint(touchPosition);
-                if (col2 == null && touchedCollider2.gameObject != col1)
+                if (col2 == null && touchedCollider2.gameObject != col1 && touchedCollider2.tag == "mixable")
                 {
                     col2 = touchedCollider2.gameObject;
                     mix2 = true;
                 }
                 Collider2D touchedCollider3 = Physics2D.OverlapPoint(touchPosition);
-                if (col3 == null && touchedCollider3.gameObject != col1 && touchedCollider3.gameObject != col2)
+                if (col3 == null && touchedCollider3.gameObject != col1 && touchedCollider3.gameObject != col2 && touchedCollider3.tag == "mixable")
                 {
                     col3 = touchedCollider3.gameObject;
                     mix3 = true;

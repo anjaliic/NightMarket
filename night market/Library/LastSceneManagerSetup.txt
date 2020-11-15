@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/test_meatball.unity
+- path: Assets/Scenes/Prep.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
