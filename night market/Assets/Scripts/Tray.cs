@@ -13,6 +13,11 @@ public class Tray : MonoBehaviour
     
     public int itemsOnTray = 0;
 
+    public bool onPrepScreen;
+    public bool onTray;
+
+    public float startYPos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,25 +28,56 @@ public class Tray : MonoBehaviour
 
         col.enabled = false;
         sp.enabled = false;
+
+        startYPos = tr.transform.position.y;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        tr.transform.position = new Vector3(cam.transform.position.x, tr.position.y, tr.position.z);
+        tr.transform.position = new Vector3(cam.transform.position.x, startYPos, tr.position.z);
 
-        if(GameManager.Instance.currentScreen != "prep" || (GameManager.Instance.currentScreen == "prep" && itemsOnTray != 0))
+        if (GameManager.Instance.currentScreen == "prep" && itemsOnTray > 0)
         {
-            col.enabled = true;
-            sp.enabled = true;
+            onTray = true;
         }
-        else
+        if(onTray == true && GameManager.Instance.currentScreen == "prep" && itemsOnTray == 0)
+        {
+            col.enabled = false;
+            sp.enabled = false;
+            onTray = false;
+        }
+        if(onTray == true)
+        {
+            tr.transform.position = new Vector3(cam.transform.position.x, startYPos - 3, tr.position.z);
+            cam.transform.position = new Vector3(cam.transform.position.x, -3f, cam.transform.position.z);
+        }
+        else if(onTray == false)
+        {
+            tr.transform.position = new Vector3(cam.transform.position.x, startYPos, tr.position.z);
+            cam.transform.position = new Vector3(cam.transform.position.x, 0f, cam.transform.position.z);
+        }
+
+    }
+
+    public void hideTray()
+    {
+        if(itemsOnTray == 0)
         {
             col.enabled = false;
             sp.enabled = false;
         }
+        else
+        {
+            col.enabled = true;
+            sp.enabled = true;
+        }
+    }
 
+    public void showTray()
+    {
+        col.enabled = true;
+        sp.enabled = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -54,6 +90,7 @@ public class Tray : MonoBehaviour
     {
         Debug.Log("off tray");
         collision.gameObject.GetComponent<DragOnTray>().onTray = false;
+        collision.gameObject.transform.parent = null;
         itemsOnTray--;
     }
 }

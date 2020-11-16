@@ -1,0 +1,772 @@
+fileFormatVersion: 2
+guid: 0574e04933fd81c46983cd492878d496
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2447426664385054356
+    second: mallet_spritesheet (1)_0
+  - first:
+      213: 1145904174224609319
+    second: mallet_spritesheet (1)_1
+  - first:
+      213: -2267877391880350858
+    second: mallet_spritesheet (1)_2
+  - first:
+      213: -9099667387595768600
+    second: mallet_spritesheet (1)_3
+  - first:
+      213: -1022174332299062229
+    second: mallet_spritesheet (1)_4
+  - first:
+      213: -4894535057664742835
+    second: mallet_spritesheet (1)_5
+  - first:
+      213: -9163186502041070702
+    second: mallet_spritesheet (1)_6
+  - first:
+      213: 1219908280307120390
+    second: mallet_spritesheet (1)_7
+  - first:
+      213: 3710741271094615645
+    second: mallet_spritesheet (1)_8
+  - first:
+      213: 5709073725321682767
+    second: mallet_spritesheet (1)_9
+  - first:
+      213: 2234800193432994689
+    second: mallet_spritesheet (1)_10
+  - first:
+      213: -864972218333423159
+    second: mallet_spritesheet (1)_11
+  - first:
+      213: -7894532007238371271
+    second: mallet_spritesheet (1)_12
+  - first:
+      213: 1574460337498988042
+    second: mallet_spritesheet (1)_13
+  - first:
+      213: -8273998844485710840
+    second: mallet_spritesheet (1)_14
+  - first:
+      213: 5630463099018308941
+    second: mallet_spritesheet (1)_15
+  - first:
+      213: -433690204463287127
+    second: mallet_spritesheet (1)_16
+  - first:
+      213: -7990567966146946319
+    second: mallet_spritesheet (1)_17
+  - first:
+      213: 5227336050030636414
+    second: mallet_spritesheet (1)_18
+  - first:
+      213: 4308533126308279977
+    second: mallet_spritesheet (1)_19
+  - first:
+      213: 8390569400247028037
+    second: mallet_spritesheet (1)_20
+  - first:
+      213: -2814305710998741663
+    second: mallet_spritesheet (1)_21
+  - first:
+      213: -3296012733877543495
+    second: mallet_spritesheet (1)_22
+  - first:
+      213: -4485388445018017146
+    second: mallet_spritesheet (1)_23
+  - first:
+      213: -1436799457646485971
+    second: mallet_spritesheet (1)_24
+  - first:
+      213: -8411843230583310349
+    second: mallet_spritesheet (1)_25
+  - first:
+      213: 7796926481160398993
+    second: mallet_spritesheet (1)_26
+  - first:
+      213: -3793760719664524173
+    second: mallet_spritesheet (1)_27
+  - first:
+      213: -7684697077183509519
+    second: mallet_spritesheet (1)_28
+  - first:
+      213: 8872293488765670998
+    second: mallet_spritesheet (1)_29
+  - first:
+      213: -752616060152384253
+    second: mallet_spritesheet (1)_30
+  - first:
+      213: 1107745700636002826
+    second: mallet_spritesheet (1)_31
+  - first:
+      213: -8967049642168454568
+    second: mallet_spritesheet (1)_32
+  - first:
+      213: -5335900984143971704
+    second: mallet_spritesheet (1)_33
+  - first:
+      213: 7537130725969022678
+    second: mallet_spritesheet (1)_34
+  - first:
+      213: 7813819048861503357
+    second: mallet_spritesheet (1)_35
+  - first:
+      213: 4080692743972119296
+    second: mallet_spritesheet (1)_36
+  - first:
+      213: 6043690282662383036
+    second: mallet_spritesheet (1)_37
+  - first:
+      213: -7947065306176059945
+    second: mallet_spritesheet (1)_38
+  - first:
+      213: 1095409517333839017
+    second: mallet_spritesheet (1)_39
+  - first:
+      213: 2779735801410866648
+    second: mallet_spritesheet (1)_40
+  - first:
+      213: -7087129212164096684
+    second: mallet_spritesheet (1)_41
+  - first:
+      213: -2897763477359175099
+    second: mallet_spritesheet (1)_42
+  - first:
+      213: 5151680409722250691
+    second: mallet_spritesheet (1)_43
+  - first:
+      213: -9035320869981691709
+    second: mallet_spritesheet (1)_44
+  - first:
+      213: 8177008326462891961
+    second: mallet_spritesheet (1)_45
+  - first:
+      213: -3445004552640880106
+    second: mallet_spritesheet (1)_46
+  - first:
+      213: -215029385162998828
+    second: mallet_spritesheet (1)_47
+  - first:
+      213: -8860492808974384113
+    second: mallet_spritesheet (1)_48
+  - first:
+      213: 5372816245896039755
+    second: mallet_spritesheet (1)_49
+  - first:
+      213: -4842804404067146373
+    second: mallet_spritesheet (1)_50
+  - first:
+      213: -2406337755390514456
+    second: mallet_spritesheet (1)_51
+  - first:
+      213: 7573153186865026712
+    second: mallet_spritesheet (1)_52
+  - first:
+      213: -2857384437500750704
+    second: mallet_spritesheet (1)_53
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 322
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_0
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 4363
+        width: 400
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c696c6acdf0912541806762d228fcde6
+      internalID: -2447426664385054356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_1
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 4355
+        width: 420
+        height: 1039
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd18775ef0c32241902c4f49293bafd
+      internalID: 1145904174224609319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_2
+      rect:
+        serializedVersion: 2
+        x: 2852
+        y: 4371
+        width: 446
+        height: 952
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b969eec339c2608449383ff45a76f769
+      internalID: -2267877391880350858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_3
+      rect:
+        serializedVersion: 2
+        x: 3322
+        y: 5188
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d510c48b2b2a52649a188cbbe4dbbd5b
+      internalID: -9099667387595768600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_4
+      rect:
+        serializedVersion: 2
+        x: 4078
+        y: 4375
+        width: 496
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809b1a144324fae40bc426186150e648
+      internalID: -1022174332299062229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_5
+      rect:
+        serializedVersion: 2
+        x: 5310
+        y: 4375
+        width: 496
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c1840e2df5e4544aaf74efa449cac1
+      internalID: -4894535057664742835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_6
+      rect:
+        serializedVersion: 2
+        x: 6510
+        y: 4375
+        width: 572
+        height: 772
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d5dff4e35424e468e4ec3c79638ddc
+      internalID: -9163186502041070702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_7
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 2775
+        width: 576
+        height: 772
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ab9b0c01429394da7edde8b2add4c7
+      internalID: 1219908280307120390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_8
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 2775
+        width: 571
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926b0b2f668866646a99ed34d1fe3fae
+      internalID: 3710741271094615645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_9
+      rect:
+        serializedVersion: 2
+        x: 2818
+        y: 2775
+        width: 568
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968c0e8dec15bfc4b9f44a15bc4a2022
+      internalID: 5709073725321682767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_10
+      rect:
+        serializedVersion: 2
+        x: 4046
+        y: 2775
+        width: 570
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2296ab20d93902041b8fcefca86ed5b1
+      internalID: 2234800193432994689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_11
+      rect:
+        serializedVersion: 2
+        x: 5278
+        y: 2775
+        width: 570
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a27b7773708b04a8fb73824bc43337
+      internalID: -864972218333423159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_12
+      rect:
+        serializedVersion: 2
+        x: 6515
+        y: 2775
+        width: 571
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa322ede54fe3343bb6bd74df8cd9bf
+      internalID: -7894532007238371271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_13
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1174
+        width: 746
+        height: 1124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ae8e7005ea7434b91cc10a8a6b8c80
+      internalID: 1574460337498988042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_16
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 1162
+        width: 888
+        height: 1156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b2c8a179572ad4b85efd9e0ac2328f
+      internalID: -433690204463287127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_19
+      rect:
+        serializedVersion: 2
+        x: 3819
+        y: 1174
+        width: 915
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f5d37d7bccd2e42b3cbcb64ea089ef
+      internalID: 4308533126308279977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_22
+      rect:
+        serializedVersion: 2
+        x: 5055
+        y: 1172
+        width: 913
+        height: 1135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7af0529303dd5488c9daa07db71199
+      internalID: -3296012733877543495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_25
+      rect:
+        serializedVersion: 2
+        x: 6582
+        y: 1163
+        width: 404
+        height: 1103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5534971ca500a4da531353e1d6a53c
+      internalID: -8411843230583310349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_29
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1170
+        width: 447
+        height: 952
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedc9018ed0ad364c96b0cd7cf02f025
+      internalID: 8872293488765670998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_34
+      rect:
+        serializedVersion: 2
+        x: 3966
+        y: 2086
+        width: 64
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f14c88654121b49b3721d0ed99d62a
+      internalID: 7537130725969022678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_42
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1991
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfd5aa81a5eb0544a480257b8540a58
+      internalID: -2897763477359175099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_43
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 1982
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80cbd061b65ff34988249a600821623
+      internalID: 5151680409722250691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallet_spritesheet (1)_44
+      rect:
+        serializedVersion: 2
+        x: 3958
+        y: 1986
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e376b42718af5342a6cf7053420fc09
+      internalID: -9035320869981691709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 16
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeanTouch", "LeanTouch.csproj", "{D02910D3-EB53-D725-FD6F-21B1C8EC0AFC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{11090C18-AEF5-82D8-0EEC-83FBE421B1BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeanTouch", "LeanTouch.csproj", "{D02910D3-EB53-D725-FD6F-21B1C8EC0AFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeanCommon", "LeanCommon.csproj", "{77B56B34-DA7D-55FD-9D39-BB3229594DB4}"
 EndProject
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D02910D3-EB53-D725-FD6F-21B1C8EC0AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D02910D3-EB53-D725-FD6F-21B1C8EC0AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D02910D3-EB53-D725-FD6F-21B1C8EC0AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D02910D3-EB53-D725-FD6F-21B1C8EC0AFC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{11090C18-AEF5-82D8-0EEC-83FBE421B1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{11090C18-AEF5-82D8-0EEC-83FBE421B1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11090C18-AEF5-82D8-0EEC-83FBE421B1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11090C18-AEF5-82D8-0EEC-83FBE421B1BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02910D3-EB53-D725-FD6F-21B1C8EC0AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02910D3-EB53-D725-FD6F-21B1C8EC0AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02910D3-EB53-D725-FD6F-21B1C8EC0AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02910D3-EB53-D725-FD6F-21B1C8EC0AFC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{77B56B34-DA7D-55FD-9D39-BB3229594DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{77B56B34-DA7D-55FD-9D39-BB3229594DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77B56B34-DA7D-55FD-9D39-BB3229594DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU

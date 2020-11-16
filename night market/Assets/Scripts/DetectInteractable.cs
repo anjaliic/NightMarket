@@ -17,6 +17,11 @@ public class DetectInteractable : MonoBehaviour
             this.GetComponentInParent<BreatheFire>().firing = true;
             this.GetComponentInParent<BreatheFire>().ingredient = collision.gameObject;
         }
+        else
+        {
+            this.GetComponentInParent<Tapping>().ingredient = null;
+            this.GetComponentInParent<Tapping>().enabled = false;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -24,7 +29,7 @@ public class DetectInteractable : MonoBehaviour
         if (collision.tag == "tappable")
         {
             this.GetComponentInParent<Tapping>().enabled = false;
-            this.GetComponentInParent<Tapping>().ingredient = collision.gameObject;
+            this.GetComponentInParent<Tapping>().ingredient = null;
         }
         else if (collision.tag == "fireable")
         {

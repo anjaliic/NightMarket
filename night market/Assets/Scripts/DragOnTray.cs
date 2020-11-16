@@ -62,7 +62,8 @@ public class DragOnTray : MonoBehaviour
         {
             //tr.transform.position = new Vector3((cam.transform.position.x - xpos), tr.position.y, tr.position.z);
             //maybe make object child of tray
-            tr.transform.position = new Vector3(cam.transform.position.x, tr.position.y, tr.position.z);
+            //tr.transform.position = new Vector3(cam.transform.position.x, tr.position.y, tr.position.z);
+            tr.transform.parent = GameObject.Find("Tray").transform;
             if(this.gameObject.name == "mallet")
             {
                 //malletActive == true
