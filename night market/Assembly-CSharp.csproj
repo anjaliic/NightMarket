@@ -63,9 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Customer.cs" />
     <Compile Include="Assets\Scripts\BreatheFire.cs" />
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
+    <Compile Include="Assets\Scripts\Customer.cs" />
     <Compile Include="Assets\Scripts\DetectInteractable.cs" />
     <Compile Include="Assets\Scripts\Draggable.cs" />
     <Compile Include="Assets\Scripts\DragOnTray.cs" />
