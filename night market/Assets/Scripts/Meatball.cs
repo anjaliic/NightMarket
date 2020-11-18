@@ -41,7 +41,7 @@ public class Meatball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "rice")
+        if(collision.gameObject.tag == "rice")
         {
             onRice = true;
         }

@@ -25,7 +25,7 @@ public class Rice : MonoBehaviour
     {
         if (collision.gameObject.name == "meatball")
         {
-            this.GetComponent<DragOnTray>().enabled = true;
+            this.GetComponent<DragOnTray>().enabled = false;
         }
     }
 }

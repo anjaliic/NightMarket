@@ -109,6 +109,7 @@ public class Mix : MonoBehaviour
                     col1 = null;
                     col2 = null;
                     col3 = null;
+                    mixCount = 0;
                     //mixing = false;
                 }
                 else if(col1.gameObject.name == rice)
@@ -120,6 +121,7 @@ public class Mix : MonoBehaviour
                     col1 = null;
                     col2 = null;
                     col3 = null;
+                    mixCount = 0;
                    //mixing = false;
                 }
             }
@@ -128,7 +130,7 @@ public class Mix : MonoBehaviour
                 if(col1.gameObject.name == rice)
                 {
                     col1.gameObject.GetComponentInParent<SpriteRenderer>().sprite = riceMid;
-                    Destroy(GameObject.Find("meatball"));
+                    Destroy(GameObject.Find("meatball(Clone)"));
                 }
             }
      
@@ -138,9 +140,8 @@ public class Mix : MonoBehaviour
     {
         float xpos = (col1.transform.position.x + col2.transform.position.x + col3.transform.position.x) / 3;
         float ypos = (col1.transform.position.y + col2.transform.position.y + col3.transform.position.y) / 3;
-        float zpos = (col1.transform.position.z + col2.transform.position.z + col3.transform.position.z) / 3;
 
-        return new Vector3(xpos, ypos, zpos);
+        return new Vector3(xpos, ypos, -10f);
     }
 
 }

@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 1421159068414972454}
   m_Layer: 0
   m_Name: rice
-  m_TagString: Untagged
+  m_TagString: rice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -238,7 +238,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -303,3 +303,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f11ba0900a7c974da73e78b309a31c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onigiri: 0

@@ -31,7 +31,7 @@ public class Seaweed : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "rice")
+        if (collision.gameObject.name == "rice(Clone)")
         {
             col1.SetActive(true);
             col2.SetActive(true);

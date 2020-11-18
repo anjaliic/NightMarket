@@ -12,6 +12,7 @@ TagManager:
   - swipable
   - customer
   - done
+  - rice
   layers:
   - Default
   - TransparentFX
