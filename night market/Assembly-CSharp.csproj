@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Customer.cs" />
     <Compile Include="Assets\Scripts\BreatheFire.cs" />
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\DetectInteractable.cs" />
@@ -75,8 +76,13 @@
     <Compile Include="Assets\Scripts\Meatball.cs" />
     <Compile Include="Assets\Scripts\Mix.cs" />
     <Compile Include="Assets\Scripts\Mixable.cs" />
+    <Compile Include="Assets\Scripts\ReturnObject.cs" />
     <Compile Include="Assets\Scripts\Rice.cs" />
     <Compile Include="Assets\Scripts\RiceballRecipe.cs" />
+    <Compile Include="Assets\Scripts\Ricebowl.cs" />
+    <Compile Include="Assets\Scripts\Seaweed.cs" />
+    <Compile Include="Assets\Scripts\SeaweedStack.cs" />
+    <Compile Include="Assets\Scripts\Swipe.cs" />
     <Compile Include="Assets\Scripts\Tapping.cs" />
     <Compile Include="Assets\Scripts\Tray.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />

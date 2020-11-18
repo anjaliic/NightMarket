@@ -19,7 +19,7 @@ public class Mix : MonoBehaviour
     public bool mix2;
     public bool mix3;
 
-    public bool mixing;
+    //public bool mixing;
 
     public Transform meatballPrefab;
     public Sprite riceMid;
@@ -40,7 +40,7 @@ public class Mix : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
-            if (touch.phase == TouchPhase.Moved && mixing == true)
+            if (touch.phase == TouchPhase.Moved /*&& mixing == true*/)
             {
                 //find meat cubes 
                 Collider2D touchedCollider1 = Physics2D.OverlapPoint(touchPosition);
@@ -91,8 +91,8 @@ public class Mix : MonoBehaviour
                 }*/
             }
         }
-        if (mixing == true)
-        {
+        /*if (mixing == true)
+        {*/
             if (mix1 && mix2 && mix3)
             {
                 mixCount++;
@@ -106,7 +106,10 @@ public class Mix : MonoBehaviour
                     Destroy(col1);
                     Destroy(col2);
                     Destroy(col3);
-                    mixing = false;
+                    col1 = null;
+                    col2 = null;
+                    col3 = null;
+                    //mixing = false;
                 }
                 else if(col1.gameObject.name == rice)
                 {
@@ -114,7 +117,10 @@ public class Mix : MonoBehaviour
                     Destroy(col1);
                     Destroy(col2);
                     Destroy(col3);
-                    mixing = false;
+                    col1 = null;
+                    col2 = null;
+                    col3 = null;
+                   //mixing = false;
                 }
             }
             if(mixCount == mixMid) 
@@ -122,9 +128,10 @@ public class Mix : MonoBehaviour
                 if(col1.gameObject.name == rice)
                 {
                     col1.gameObject.GetComponentInParent<SpriteRenderer>().sprite = riceMid;
+                    Destroy(GameObject.Find("meatball"));
                 }
             }
-        }
+     
     }
 
     Vector3 FindCenterPoint()

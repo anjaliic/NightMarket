@@ -28,9 +28,9 @@ public class Ingredients : MonoBehaviour
 
     private void Update()
     {
-        if(meat1.tag == "mixable" && meat2.tag == "mixable" && meat3.tag == "mixable")
+        /*if(meat1.tag == "mixable" && meat2.tag == "mixable" && meat3.tag == "mixable")
         {
             mix.GetComponent<Mix>().mixing = true;
-        }
+        }*/
     }
 }

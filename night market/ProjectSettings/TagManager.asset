@@ -9,6 +9,9 @@ TagManager:
   - tappable
   - mixable
   - fireable
+  - swipable
+  - customer
+  - done
   layers:
   - Default
   - TransparentFX

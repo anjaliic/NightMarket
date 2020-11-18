@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &13715423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,7 +306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &398358564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,7 +621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1137289141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,7 +683,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1228919769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,7 +850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1812029117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1013,6 +1013,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: fireable
       objectReference: {fileID: 0}
+    - target: {fileID: 3534822986390075292, guid: 73bfb23ae3a34434d8f571fb2e9957ff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8166857819518633523, guid: 73bfb23ae3a34434d8f571fb2e9957ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1091,3 +1096,4 @@ MonoBehaviour:
   cookedMeatball: {fileID: 21300000, guid: 8fe0937653bba634cbf1855c7acab0ee, type: 3}
   secondsToCook: 3
   secondsCooked: 0
+  onRice: 0

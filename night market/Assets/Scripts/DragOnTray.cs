@@ -27,8 +27,6 @@ public class DragOnTray : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
         //drag & drop
         if (Input.touchCount > 0)
         {
