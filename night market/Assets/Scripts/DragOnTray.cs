@@ -65,7 +65,7 @@ public class DragOnTray : MonoBehaviour
             if(this.gameObject.name == "mallet")
             {
                 //malletActive == true
-                GameManager.Instance.malletActive = true;
+                //GameManager.Instance.malletActive = true;
             }
         }
     }

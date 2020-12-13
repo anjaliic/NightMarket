@@ -13,10 +13,13 @@ public class BreatheFire : MonoBehaviour
     public bool firing;
     public bool counting;
 
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         spRend = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,6 +27,7 @@ public class BreatheFire : MonoBehaviour
     {
         if(firing == true)
         {
+            anim.SetBool("fire", true);
             spRend.sprite = fireSpr;
             if(counting == true)
             {
@@ -33,6 +37,7 @@ public class BreatheFire : MonoBehaviour
         else
         {
             spRend.sprite = nofireSpr;
+            anim.SetBool("fire", false);
         }
     }
 

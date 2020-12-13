@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\NewScripts\TrayManager.cs" />
     <Compile Include="Assets\Scripts\NewScripts\UI\NavButtonManager.cs" />
     <Compile Include="Assets\Scripts\NewScripts\UI\NavButtons.cs" />
+    <Compile Include="Assets\Scripts\RandomCustomer.cs" />
     <Compile Include="Assets\Scripts\ReturnObject.cs" />
     <Compile Include="Assets\Scripts\Rice.cs" />
     <Compile Include="Assets\Scripts\RiceballRecipe.cs" />

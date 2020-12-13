@@ -1,0 +1,415 @@
+fileFormatVersion: 2
+guid: 3562f96da405cb945867ef051ba000a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 762167910176816571
+    second: spritesheet_dragonfire_fireloop_1100x2200_0
+  - first:
+      213: -3784373369797778139
+    second: spritesheet_dragonfire_fireloop_1100x2200_1
+  - first:
+      213: -922622541852305723
+    second: spritesheet_dragonfire_fireloop_1100x2200_2
+  - first:
+      213: -1113019386958430978
+    second: spritesheet_dragonfire_fireloop_1100x2200_3
+  - first:
+      213: 8325249866183905052
+    second: spritesheet_dragonfire_fireloop_1100x2200_4
+  - first:
+      213: 1026246504064803493
+    second: spritesheet_dragonfire_fireloop_1100x2200_5
+  - first:
+      213: 2220414475602086523
+    second: spritesheet_dragonfire_fireloop_1100x2200_6
+  - first:
+      213: 8207149155260369280
+    second: spritesheet_dragonfire_fireloop_1100x2200_7
+  - first:
+      213: -254400839463248648
+    second: spritesheet_dragonfire_fireloop_1100x2200_8
+  - first:
+      213: 8768487789597246248
+    second: spritesheet_dragonfire_fireloop_1100x2200_9
+  - first:
+      213: -5028467933195738785
+    second: spritesheet_dragonfire_fireloop_1100x2200_10
+  - first:
+      213: 3719395144168835803
+    second: spritesheet_dragonfire_fireloop_1100x2200_11
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 322
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2261
+        width: 1100
+        height: 2139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1373595b59ef4ab4bae9ad3dea85b287
+      internalID: 762167910176816571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_1
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2266
+        width: 1100
+        height: 2134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c824aaabdaa6b24aa049c131c1d706a
+      internalID: -3784373369797778139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_2
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 2261
+        width: 1100
+        height: 2139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905ace4b04dbc02498c84c5f31e52e14
+      internalID: -922622541852305723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_3
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 2261
+        width: 1100
+        height: 2139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5ade7987c9d5340964a5dd3f593730
+      internalID: -1113019386958430978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_4
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 2266
+        width: 1100
+        height: 2134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207f3a394493f214497911bf5189db82
+      internalID: 8325249866183905052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_5
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 2261
+        width: 1100
+        height: 2139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c36319294516894ca5df616475e6ef6
+      internalID: 1026246504064803493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_6
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 2272
+        width: 1100
+        height: 2128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ee42d66bd34e54e91e8b8a6a32d735
+      internalID: 2220414475602086523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 1100
+        height: 2136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcf16178c91cd349b87a71151d1918d
+      internalID: 8207149155260369280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_8
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 76
+        width: 1100
+        height: 2124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa1d48799c6a3942a7eb0753d594008
+      internalID: -254400839463248648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_9
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 81
+        width: 1100
+        height: 2125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797fe888cfa928f408e4729040fa0e46
+      internalID: 8768487789597246248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_10
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 70
+        width: 1100
+        height: 2130
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ea04a327e5c584da6a8ec2aa770c2c
+      internalID: -5028467933195738785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_dragonfire_fireloop_1100x2200_11
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 64
+        width: 1100
+        height: 2136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8bafebb177d6641aa2c9d9c6707582
+      internalID: 3719395144168835803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

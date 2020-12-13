@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public bool malletActive = false;
+    //public bool malletActive = false;
     public GameObject chopping_board;
 
     public Camera cam;
@@ -35,14 +35,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update() { 
    
-        if(malletActive == true)
+        /*if(malletActive == true)
         {
             chopping_board.SetActive(true);
         }
         else
         {
             chopping_board.SetActive(false);
-        }
+        }*/
 
         if (cam.transform.position.x < 0)
         {
