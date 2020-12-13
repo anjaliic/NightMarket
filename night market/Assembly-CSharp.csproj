@@ -76,6 +76,10 @@
     <Compile Include="Assets\Scripts\Meatball.cs" />
     <Compile Include="Assets\Scripts\Mix.cs" />
     <Compile Include="Assets\Scripts\Mixable.cs" />
+    <Compile Include="Assets\Scripts\NewScripts\_GameManager.cs" />
+    <Compile Include="Assets\Scripts\NewScripts\TrayManager.cs" />
+    <Compile Include="Assets\Scripts\NewScripts\UI\NavButtonManager.cs" />
+    <Compile Include="Assets\Scripts\NewScripts\UI\NavButtons.cs" />
     <Compile Include="Assets\Scripts\ReturnObject.cs" />
     <Compile Include="Assets\Scripts\Rice.cs" />
     <Compile Include="Assets\Scripts\RiceballRecipe.cs" />

@@ -11,11 +11,6 @@ public class UIManager : MonoBehaviour
     public GameObject fromFood;
     public GameObject fromPantry;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
