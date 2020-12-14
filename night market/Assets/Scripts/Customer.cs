@@ -14,11 +14,17 @@ public class Customer : MonoBehaviour
     void Start()
     {
         spRend = GetComponent<SpriteRenderer>();
+        spRend.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(GameManager.Instance.activeCustomer == true)
+        {
+            spRend.enabled = true;
+        }
+
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);

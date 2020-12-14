@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
     public Camera cam;
     public string currentScreen;
 
+    public bool activeCustomer = false;
+
+    public bool notes = false;
+    public GameObject notepad;
+
     private void Awake()
     {
         if(Instance == null)
@@ -55,6 +60,15 @@ public class GameManager : MonoBehaviour
         else if (cam.transform.position.x == 0)
         {
             currentScreen = "prep";
+        }
+
+        if(notes == false)
+        {
+            notepad.SetActive(false);
+        }
+        else
+        {
+            notepad.SetActive(true);
         }
     }
 }

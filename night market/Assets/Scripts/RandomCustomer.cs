@@ -22,7 +22,7 @@ public class RandomCustomer : MonoBehaviour
 
         customer = Random.Range(0, sprites.Length);
         spRend.sprite = sprites[customer];
-        StartCoroutine(LerpFunction(targetColor, targetSize, 10));
+        StartCoroutine(LerpFunction(targetColor, targetSize, 2));
     }
 
     IEnumerator LerpFunction(Color endValue, Vector3 endSize, float duration)
@@ -38,5 +38,6 @@ public class RandomCustomer : MonoBehaviour
         }
         spRend.color = endValue;
         tr.localScale = endSize;
+        GameManager.Instance.activeCustomer = true;
     }
 }

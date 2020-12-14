@@ -63,8 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ChefNotesUI.cs" />
+    <Compile Include="Assets\NotesUI.cs" />
     <Compile Include="Assets\Scripts\BreatheFire.cs" />
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
+    <Compile Include="Assets\Scripts\ChefNotes.cs" />
     <Compile Include="Assets\Scripts\Customer.cs" />
     <Compile Include="Assets\Scripts\DetectInteractable.cs" />
     <Compile Include="Assets\Scripts\Draggable.cs" />
