@@ -7,40 +7,54 @@ public class TrayManager : MonoBehaviour
     Collider2D col;
     Transform tr;
 
-    public GameObject cam;
+    public Camera cam;
 
-    float startYPos;
+    float startPosY;
 
-    //smoothdamp
-    public float smoothTime = 0.3F;
-    private Vector3 velocity = Vector3.zero;
+    public int itemsOnTray;
 
-    // Start is called before the first frame update
     void Start()
     {
+        cam = _GameManager.Instance.cam;
+        
         col = GetComponent<Collider2D>();
         tr = GetComponent<Transform>();
 
-        startYPos  = tr.position.y;
+        startPosY  = tr.position.y;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        //slide up if on pantry or equipment screen (smoothdamp)
+        //show the tray it is on the equipment/pantry screen
         if (_GameManager.Instance.currentScreen == "pantry" || _GameManager.Instance.currentScreen == "equipment")
         {
-            if (tr.position.y == startYPos)
-            {
-                tr.position = new Vector3(cam.transform.position.x, startYPos, tr.position.z);
-                Vector3 targetPosition = new Vector3(cam.transform.position.x, startYPos + 3f, -10);
-                tr.position = Vector3.SmoothDamp(tr.position, targetPosition, ref velocity, smoothTime);
-            }
+            tr.position = new Vector3(cam.transform.position.x, (startPosY + 3f), tr.position.z);
         }
+        //if there are items on the tray, show on the prep screen
+        else if (_GameManager.Instance.currentScreen == "prep" && itemsOnTray > 0)
+        {
+            tr.position = new Vector3(cam.transform.position.x, (startPosY + 3f), tr.position.z);
+        }
+        //otherwise hide tray on prep screen
         else
         {
-            //tr.position = new Vector3(cam.transform.position.x, startYPos, tr.position.z);
+            tr.position = new Vector3(cam.transform.position.x, startPosY, tr.position.z);
         }
+    }
+
+    //item is dragged on tray
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        collision.gameObject.transform.parent = tr.transform;
+        itemsOnTray++;
+    }
+
+    //item is dragged off tray
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        collision.gameObject.transform.parent = null;
+        itemsOnTray--;
     }
 }

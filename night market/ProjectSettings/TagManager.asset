@@ -50,6 +50,9 @@ TagManager:
   - name: background
     uniqueID: 2547931831
     locked: 0
+  - name: Tray
+    uniqueID: 340710775
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

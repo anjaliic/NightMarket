@@ -6,7 +6,7 @@ public class _GameManager : MonoBehaviour
 {
     public static _GameManager Instance { get; private set; }
 
-     public Camera cam;
+    public Camera cam;
     public string currentScreen;
 
     private void Awake()
@@ -27,9 +27,9 @@ public class _GameManager : MonoBehaviour
         cam = cam.GetComponent<Camera>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //updates the "currentScreen" based on the camera position
 
         if (cam.transform.position.x < 0)
         {
