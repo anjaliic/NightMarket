@@ -24,9 +24,13 @@ public class _Tracker : MonoBehaviour
     string tempKey;
     int tempValue;
 
+    //other variables to track
+    public int taps;
+
     void Start()
     {
         ingredients.Add("meatcube");
+        ingredients.Add("mashedmeat");
         foreach (string item in ingredients)
         {
             ingredientCount.Add(item, 0);

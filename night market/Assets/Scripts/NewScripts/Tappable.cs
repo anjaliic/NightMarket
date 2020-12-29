@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Tappable : MonoBehaviour
 {
+    //this object must be tapped to be interacted with
+
     Collider2D col;
     Animator anim;
 
-    public bool tappable;
+    public bool tappable = true;
+    public int taps;
 
     void Start()
     {
@@ -17,7 +20,7 @@ public class Tappable : MonoBehaviour
 
     void Update()
     {
-        if (Input.touchCount > 0)
+        if (Input.touchCount > 0 && _GameManager.Instance.currentScreen == "prep")
         {
             Touch touch = Input.GetTouch(0);
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
@@ -25,11 +28,11 @@ public class Tappable : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
-                if (col == touchedCollider)
+                if (col == touchedCollider && tappable == true)
                 {
-                    tappable = true;
                     Lean.Touch.LeanTouch.OnFingerTap += (x) => Debug.Log("tapped!");
-                    Lean.Touch.LeanTouch.OnFingerTap += (x) => anim.SetTrigger("tap"); ;
+                    Lean.Touch.LeanTouch.OnFingerTap += (x) => anim.SetTrigger("tap");
+                    Lean.Touch.LeanTouch.OnFingerTap += (x) => _Tracker.Instance.taps++;
                 }
             }
             if(touch.phase == TouchPhase.Ended)
