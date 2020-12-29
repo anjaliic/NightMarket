@@ -7,7 +7,7 @@ public class Tappable : MonoBehaviour
     Collider2D col;
     Animator anim;
 
-    public bool tappable = false;
+    public bool tappable;
 
     void Start()
     {

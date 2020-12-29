@@ -35,11 +35,14 @@ public class TrayManager : MonoBehaviour
         //if there are items on the tray, show on the prep screen
         else if (_GameManager.Instance.currentScreen == "prep" && itemsOnTray > 0)
         {
-            tr.position = new Vector3(cam.transform.position.x, (startPosY + 3f), tr.position.z);
+            //tr.position = new Vector3(cam.transform.position.x, (startPosY + 3f), tr.position.z);
+            tr.transform.position = new Vector3(cam.transform.position.x, startPosY, tr.position.z);
+            cam.transform.position = new Vector3(cam.transform.position.x, -3f, cam.transform.position.z);
         }
         //otherwise hide tray on prep screen
         else
         {
+            cam.transform.position = new Vector3(cam.transform.position.x, 0f, cam.transform.position.z);
             tr.position = new Vector3(cam.transform.position.x, startPosY, tr.position.z);
         }
     }

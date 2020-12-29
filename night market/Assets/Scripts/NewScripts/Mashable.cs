@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Mashable : MonoBehaviour
-{ 
+{
+    public string nextScript;
+
     void Start()
     {
         
