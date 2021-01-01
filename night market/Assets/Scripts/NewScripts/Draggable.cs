@@ -37,7 +37,7 @@ public class Draggable : MonoBehaviour
                     {
                         Debug.Log("Started Coroutine at timestamp : " + Time.time);
 
-                        yield return new WaitForSeconds(.5f);
+                        yield return new WaitForSeconds(.2f);
 
                         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
                         if (touchPosition == firstTouch)

@@ -34,7 +34,7 @@ public class _Tracker : MonoBehaviour
         foreach (string item in ingredients)
         {
             ingredientCount.Add(item, 0);
-        }
+        } 
     }
 
     void Update()
@@ -50,8 +50,6 @@ public class _Tracker : MonoBehaviour
             // Access the value with item.Value
             if(collision.gameObject.name == item.Key)
             {
-                Debug.Log("added item: " + item.Key);
-                Debug.Log("previous count: " + item);
                 tempKey = item.Key;
                 tempValue = item.Value + 1;
                 AddIngredient();   
@@ -62,7 +60,7 @@ public class _Tracker : MonoBehaviour
     void AddIngredient()
     {
         ingredientCount[tempKey] = tempValue;
-        Debug.Log("new count: " + ingredientCount[tempKey]);
+        Debug.Log(tempKey + ": " + ingredientCount[tempKey]);
         tempKey = null;
     }
 
