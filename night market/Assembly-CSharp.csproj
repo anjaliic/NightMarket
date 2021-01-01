@@ -78,6 +78,8 @@
     <Compile Include="Assets\Scripts\NewScripts\_GameManager.cs" />
     <Compile Include="Assets\Scripts\NewScripts\_Tracker.cs" />
     <Compile Include="Assets\Scripts\NewScripts\Draggable.cs" />
+    <Compile Include="Assets\Scripts\NewScripts\Dragon.cs" />
+    <Compile Include="Assets\Scripts\NewScripts\Fireable.cs" />
     <Compile Include="Assets\Scripts\NewScripts\Mashable.cs" />
     <Compile Include="Assets\Scripts\NewScripts\mMix.cs" />
     <Compile Include="Assets\Scripts\NewScripts\Tappable.cs" />

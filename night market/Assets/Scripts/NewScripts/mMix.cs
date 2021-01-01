@@ -28,7 +28,6 @@ public class mMix : MonoBehaviour
 
             if (touch.phase == TouchPhase.Moved)
             {
-                Debug.Log("moving");
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if(touchedCollider.tag == "mixable")
                 {
