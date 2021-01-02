@@ -20,8 +20,8 @@ public class SeaweedStack : MonoBehaviour
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if (touchedCollider.name == "seaweedstack")
                 {
-                    Instantiate(seaweedPrefab, new Vector3(touchPosition.x, touchPosition.y, 10f), Quaternion.identity);
-                    this.enabled = false;
+                    Lean.Touch.LeanTouch.OnFingerTap += (x) => Instantiate(seaweedPrefab, new Vector3(touchPosition.x, touchPosition.y, 10f), Quaternion.identity);
+                    
                 }
             }
         }

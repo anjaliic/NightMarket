@@ -35,10 +35,10 @@ public class Tappable : MonoBehaviour
                     Lean.Touch.LeanTouch.OnFingerTap += (x) => _Tracker.Instance.taps++;
                 }
             }
-            if(touch.phase == TouchPhase.Ended)
+            /*if(touch.phase == TouchPhase.Ended)
             {
                 tappable = false;
-            }
+            }*/
         }
     }
 }

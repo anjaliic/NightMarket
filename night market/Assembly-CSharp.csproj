@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\NewScripts\Meatball.cs" />
     <Compile Include="Assets\Scripts\NewScripts\mMix.cs" />
     <Compile Include="Assets\Scripts\NewScripts\RiceSpread.cs" />
+    <Compile Include="Assets\Scripts\NewScripts\Swipeable.cs" />
     <Compile Include="Assets\Scripts\NewScripts\Tappable.cs" />
     <Compile Include="Assets\Scripts\NewScripts\TrayManager.cs" />
     <Compile Include="Assets\Scripts\NewScripts\UI\NavButtonManager.cs" />

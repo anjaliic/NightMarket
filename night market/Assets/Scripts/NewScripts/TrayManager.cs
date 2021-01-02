@@ -50,14 +50,20 @@ public class TrayManager : MonoBehaviour
     //item is dragged on tray
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.transform.parent = tr.transform;
-        itemsOnTray++;
+        if (collision.gameObject.tag != "notdraggable")
+        {
+            collision.gameObject.transform.parent = tr.transform;
+            itemsOnTray++;
+        }
     }
 
     //item is dragged off tray
     private void OnTriggerExit2D(Collider2D collision)
     {
-        collision.gameObject.transform.parent = null;
-        itemsOnTray--;
+        if (collision.gameObject.tag != "notdraggable")
+        {
+            collision.gameObject.transform.parent = null;
+            itemsOnTray--;
+        }
     }
 }
