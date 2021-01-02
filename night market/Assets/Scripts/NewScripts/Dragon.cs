@@ -18,11 +18,6 @@ public class Dragon : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         anim.SetBool("fire", true);

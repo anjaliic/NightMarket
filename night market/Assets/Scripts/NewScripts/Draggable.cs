@@ -35,11 +35,9 @@ public class Draggable : MonoBehaviour
 
                     IEnumerator WaitToDrag()
                     {
-                        Debug.Log("Started Coroutine at timestamp : " + Time.time);
 
                         yield return new WaitForSeconds(.2f);
 
-                        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
                         if (touchPosition == firstTouch)
                         {
                             draggable = true;

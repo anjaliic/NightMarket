@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ricebowl : MonoBehaviour
+public class Ricebowl_old : MonoBehaviour
 {
     CircleCollider2D riceCol;
     public Transform ricePrefab;

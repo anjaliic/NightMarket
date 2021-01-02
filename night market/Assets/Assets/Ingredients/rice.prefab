@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 5159279191916864696}
   - component: {fileID: 7878939781952508896}
   m_Layer: 0
-  m_Name: rice_col
+  m_Name: rice
   m_TagString: mixable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5159279191916864696
 Transform:
   m_ObjectHideFlags: 0
@@ -58,12 +58,12 @@ GameObject:
   - component: {fileID: 1740344097032525963}
   - component: {fileID: 7037326798819371540}
   m_Layer: 0
-  m_Name: rice_col
+  m_Name: rice
   m_TagString: mixable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1740344097032525963
 Transform:
   m_ObjectHideFlags: 0
@@ -105,12 +105,12 @@ GameObject:
   - component: {fileID: 5530518290110293374}
   - component: {fileID: 3334060179171161215}
   m_Layer: 0
-  m_Name: rice_col
+  m_Name: rice
   m_TagString: mixable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5530518290110293374
 Transform:
   m_ObjectHideFlags: 0
@@ -153,11 +153,11 @@ GameObject:
   - component: {fileID: 7130442589219580542}
   - component: {fileID: 8474960890826345353}
   - component: {fileID: 2927925994202951568}
-  - component: {fileID: 5092484863524572824}
-  - component: {fileID: 1421159068414972454}
+  - component: {fileID: 3880474977241199260}
+  - component: {fileID: 8917056343904412844}
   m_Layer: 0
   m_Name: rice
-  m_TagString: rice
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -275,7 +275,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5092484863524572824
+--- !u!114 &3880474977241199260
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,14 +284,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7085003803068899648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ed19bfdab175644a8beed1627ac1275, type: 3}
+  m_Script: {fileID: 11500000, guid: e9b0033b12f932a4f9d4662e657baa51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onTray: 0
-  cam: {fileID: 0}
-  xpos: 0
-  zPos: 0
---- !u!114 &1421159068414972454
+  draggable: 0
+  firstTouch: {x: 0, y: 0}
+  touchPosition: {x: 0, y: 0}
+--- !u!114 &8917056343904412844
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,7 +299,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7085003803068899648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f11ba0900a7c974da73e78b309a31c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a1d2c5918b96de4e8709f82d49e097c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onigiri: 0
+  haveMeatball: 0
+  riceball: {fileID: 4104617519533903327, guid: c55df54ab76dc0349825af09456d8de3,
+    type: 3}
+  count: 0
+  col1: {fileID: 458246903345489227}
+  col2: {fileID: 3595240851802525473}
+  col3: {fileID: 3531739596915960312}

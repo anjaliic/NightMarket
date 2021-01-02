@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class _Tracker : MonoBehaviour
 { 
+
+    //maybe put a tracker on each ingredient & if they are in the bounds of the prep screen they are added to the list
     public static _Tracker Instance { get; private set; }
     private void Awake()
     {

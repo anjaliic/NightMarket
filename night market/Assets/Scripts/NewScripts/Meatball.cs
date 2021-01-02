@@ -1,29 +1,21 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Meatball : MonoBehaviour
 {
-    public Sprite cookedMeatball;
-    SpriteRenderer sprRend;
-
-    public int secondsToCook;
-    public int secondsCooked;
-
+    public GameObject ricespread;
     public bool onRice;
 
     // Start is called before the first frame update
     void Start()
     {
-        sprRend = GetComponent<SpriteRenderer>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(secondsToCook == secondsCooked)
-        {
-            sprRend.sprite = cookedMeatball;
-        }
-
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -31,9 +23,10 @@ public class Meatball : MonoBehaviour
 
             if (touch.phase == TouchPhase.Ended)
             {
-               if(onRice == true)
+                if(onRice == true)
                 {
-                    this.GetComponent<DragOnTray>().enabled = false;
+                    ricespread.GetComponent<RiceSpread>().haveMeatball = true;
+                    Destroy(this.gameObject);
                 }
             }
         }
@@ -41,9 +34,19 @@ public class Meatball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "rice")
+        if(collision.gameObject.name == "ricespread")
         {
             onRice = true;
+            ricespread = collision.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "ricespread")
+        {
+            onRice = false;
+            ricespread = null;
         }
     }
 }

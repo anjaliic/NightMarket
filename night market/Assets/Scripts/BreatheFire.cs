@@ -45,7 +45,7 @@ public class BreatheFire : MonoBehaviour
     {
         counting = false;
         yield return new WaitForSeconds(1);
-        ingredient.GetComponent<Meatball>().secondsCooked++;
+        //ingredient.GetComponent<Meatball>().secondsCooked++;
         counting = true;
     }
 }

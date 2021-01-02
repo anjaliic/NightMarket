@@ -4,6 +4,23 @@ using UnityEngine;
 
 public class mMix : MonoBehaviour
 {
+    public static mMix Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public Dictionary<string, int> mixesforIngredient = new Dictionary<string, int>();
+
     public List<GameObject> mixables;
 
     public string activeMix;
@@ -16,11 +33,14 @@ public class mMix : MonoBehaviour
 
     void Start()
     {
-        
+        mixesforIngredient.Add("mashedmeat", 3);
+        mixesforIngredient.Add("rice", 5);
     }
 
     void Update()
     {
+       
+
         if (Input.touchCount > 0 && _GameManager.Instance.currentScreen == "prep" && mixed == false)
         {
             Touch touch = Input.GetTouch(0);
@@ -42,6 +62,13 @@ public class mMix : MonoBehaviour
                     {
                         mixables.Add(touchedCollider.gameObject);
                         activeMix = mixables[0].name;
+                        foreach (KeyValuePair<string, int> item in mixesforIngredient)
+                        {
+                            if (item.Key == activeMix)
+                            {
+                                mixesNeeded = item.Value;
+                            }
+                        }
                     }                 
                 }
             }
@@ -56,7 +83,12 @@ public class mMix : MonoBehaviour
 
         if (mixed == true)
         {
-            Instantiate(mashedmeat, FindCenterPoint(), Quaternion.identity);
+            if (activeMix == "mashedmeat")
+            {
+                Instantiate(mashedmeat, FindCenterPoint(), Quaternion.identity);
+
+            }
+
             foreach(GameObject item in mixables)
             {
                 Destroy(item);
@@ -68,11 +100,14 @@ public class mMix : MonoBehaviour
 
         if (mixables.Count == itemsNeeded && mixed == false)
         {
-            int temp = mixesNeeded - mixCount;
-            foreach(GameObject item in mixables)
+            if (activeMix == "mashedmeat")
             {
-                item.transform.position = new Vector3((item.transform.position.x + ((FindCenterPoint().x - item.transform.position.x) / temp)), 
-                    (item.transform.position.y + ((FindCenterPoint().y - item.transform.position.y) / temp)), item.transform.position.z);
+                int temp = mixesNeeded - mixCount;
+                foreach (GameObject item in mixables)
+                {
+                    item.transform.position = new Vector3((item.transform.position.x + ((FindCenterPoint().x - item.transform.position.x) / temp)),
+                        (item.transform.position.y + ((FindCenterPoint().y - item.transform.position.y) / temp)), item.transform.position.z);
+                }
             }
             mixCount++;
             if(mixCount == mixesNeeded)

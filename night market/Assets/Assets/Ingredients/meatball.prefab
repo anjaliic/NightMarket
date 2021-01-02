@@ -9,11 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8166857819518633523}
-  - component: {fileID: 2531744895902811624}
   - component: {fileID: 9223133486647716350}
   - component: {fileID: 405711374702767348}
   - component: {fileID: 6148457306613221699}
   - component: {fileID: 7771895045561862229}
+  - component: {fileID: 8849497321598334359}
+  - component: {fileID: 4624996422248145665}
   m_Layer: 0
   m_Name: meatball
   m_TagString: Untagged
@@ -35,22 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2531744895902811624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3534822986390075292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ed19bfdab175644a8beed1627ac1275, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onTray: 0
-  cam: {fileID: 0}
-  xpos: 0
-  zPos: 0
 --- !u!212 &9223133486647716350
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -88,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4fcf771df46eeda4eb618884d4cb941b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -163,7 +148,36 @@ MonoBehaviour:
   fireDetection: {fileID: 0}
   dragon: {fileID: 0}
   count: 0
-  secondstoCook: 0
+  secondstoCook: 3
   cookedSp: {fileID: 21300000, guid: 8fe0937653bba634cbf1855c7acab0ee, type: 3}
   firing: 0
   counting: 0
+--- !u!114 &8849497321598334359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3534822986390075292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44b4c9e17510b8e488369a6cc5be6e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ricespread: {fileID: 0}
+  onRice: 0
+--- !u!114 &4624996422248145665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3534822986390075292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b0033b12f932a4f9d4662e657baa51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  draggable: 0
+  firstTouch: {x: 0, y: 0}
+  touchPosition: {x: 0, y: 0}
