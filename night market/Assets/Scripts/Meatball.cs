@@ -6,16 +6,25 @@ public class Meatball : MonoBehaviour
 {
     public GameObject ricespread;
     public bool onRice;
+    public bool cooked;
+
+    SpriteRenderer spRend;
+    public Sprite cookedMeatball;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        spRend = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(this.GetComponent<Fireable>().cooked == true)
+        {
+            spRend.sprite = cookedMeatball;
+        }
+
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);

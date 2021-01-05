@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Draggable.cs" />
     <Compile Include="Assets\Scripts\Dragon.cs" />
     <Compile Include="Assets\Scripts\Fireable.cs" />
+    <Compile Include="Assets\Scripts\Mallet.cs" />
     <Compile Include="Assets\Scripts\Mashable.cs" />
     <Compile Include="Assets\Scripts\Meatball.cs" />
     <Compile Include="Assets\Scripts\MeatCube.cs" />
@@ -93,10 +94,10 @@
     <Compile Include="Assets\Scripts\old_Scripts\Ricebowl_old.cs" />
     <Compile Include="Assets\Scripts\old_Scripts\Seaweed.cs" />
     <Compile Include="Assets\Scripts\old_Scripts\SeaweedStack.cs" />
-    <Compile Include="Assets\Scripts\old_Scripts\Swipe.cs" />
     <Compile Include="Assets\Scripts\old_Scripts\Tapping.cs" />
     <Compile Include="Assets\Scripts\old_Scripts\Tray.cs" />
     <Compile Include="Assets\Scripts\old_Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\RiceBowl.cs" />
     <Compile Include="Assets\Scripts\RiceSpread.cs" />
     <Compile Include="Assets\Scripts\Swipeable.cs" />
     <Compile Include="Assets\Scripts\Tappable.cs" />

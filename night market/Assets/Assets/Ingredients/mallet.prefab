@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7743558791396834883}
   - component: {fileID: 7743558791396834880}
   - component: {fileID: 7743558791396834876}
-  - component: {fileID: 7743558791396834879}
-  - component: {fileID: 7743558791396834885}
   - component: {fileID: 7743558791396834878}
+  - component: {fileID: 7743558791396834879}
+  - component: {fileID: 2897477980175443469}
+  - component: {fileID: 7743558791396834885}
   m_Layer: 0
   m_Name: mallet
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7743558791396834877}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.89, y: 1.61, z: 0}
+  m_LocalPosition: {x: 3.89, y: 1.61, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7743558792368075096}
@@ -133,35 +134,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2173913, y: 3.4576292}
   m_EdgeRadius: 0
---- !u!114 &7743558791396834879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7743558791396834877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9b0033b12f932a4f9d4662e657baa51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  draggable: 0
-  firstTouch: {x: 0, y: 0}
-  touchPosition: {x: 0, y: 0}
---- !u!114 &7743558791396834885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7743558791396834877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f10e50ca48fcee04f88e98bcc6bae4cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tappable: 1
-  taps: 0
 --- !u!95 &7743558791396834878
 Animator:
   serializedVersion: 3
@@ -181,6 +153,49 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7743558791396834879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7743558791396834877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b0033b12f932a4f9d4662e657baa51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  draggable: 0
+  firstTouch: {x: 0, y: 0}
+  touchPosition: {x: 0, y: 0}
+--- !u!114 &2897477980175443469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7743558791396834877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 417aad88f8026c44cbd28af7934ce5a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taps: 0
+  animLength: 0.8
+--- !u!114 &7743558791396834885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7743558791396834877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10e50ca48fcee04f88e98bcc6bae4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tapped: 0
+  tappable: 1
 --- !u!1 &7743558792368075097
 GameObject:
   m_ObjectHideFlags: 0

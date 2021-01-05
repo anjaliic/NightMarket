@@ -6,26 +6,20 @@ public class Fireable : MonoBehaviour
 {
     public bool lineofFire;
     public Collider2D fireDetection;
-    public GameObject dragon;
 
-    public int count;
+    public int seconds;
     
-    public int secondstoCook;
-    public Sprite cookedSp;
-   
-    //public int secondtoBurn;
-    //public Sprite burnt;
+    public int cookTime;
+    //public int burnTime;
+
+    public bool cooked;
 
     public bool firing;
     public bool counting;
 
-    SpriteRenderer spRend;
-
     void Start()
-    {
-        spRend = GetComponent<SpriteRenderer>();
+    { 
         fireDetection = GameObject.Find("fireDetection").GetComponent<Collider2D>();
-        dragon = GameObject.Find("dragon");
     }
 
     void Update()
@@ -38,9 +32,9 @@ public class Fireable : MonoBehaviour
             }
         }
 
-        if(count == secondstoCook)
+        if(seconds == cookTime)
         {
-            spRend.sprite = cookedSp;
+            cooked = true;
         }
     }
 
@@ -48,7 +42,7 @@ public class Fireable : MonoBehaviour
     {
         counting = false;
         yield return new WaitForSeconds(1);
-        count++;
+        seconds++;
         counting = true;
     }
 

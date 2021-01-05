@@ -9,15 +9,9 @@ public class DoubleTap : MonoBehaviour
     public bool dTappable;
     public bool doubleTapped;
 
-    public Sprite newSprite;
-    public Transform result;
-
-    SpriteRenderer spRend;
-
     void Start()
     {
         col = GetComponent<Collider2D>();
-        spRend = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -38,6 +32,7 @@ public class DoubleTap : MonoBehaviour
                     if (dTappable == true)
                     {
                         Lean.Touch.LeanTouch.OnFingerTap += (x) => doubleTapped = true;
+                        doubleTapped = false;
                     }
 
                     IEnumerator DoubleTapWithinTime()
@@ -49,13 +44,6 @@ public class DoubleTap : MonoBehaviour
                     }
                 }
             }
-        }
-
-        if(doubleTapped == true)
-        {
-            Instantiate(result, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
-            spRend.sprite = newSprite;
-            this.enabled = false;
         }
     }
 }

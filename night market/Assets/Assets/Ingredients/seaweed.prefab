@@ -139,16 +139,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3236652699253668067}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ee7036db0892f344a11cec062b644df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  col1: {fileID: 0}
-  col2: {fileID: 0}
-  rice: {fileID: 0}
-  onigiri: {fileID: 21300000, guid: f28bb42ee3b33e543bb714fb0ffa2506, type: 3}
-  swiped: 0
+  onigiri: {fileID: 3877889506294763437, guid: 6f18eed1694753f4fb4c5c0b11a8dc6a, type: 3}
+  riceball: {fileID: 0}
 --- !u!114 &758042330623571775
 MonoBehaviour:
   m_ObjectHideFlags: 0

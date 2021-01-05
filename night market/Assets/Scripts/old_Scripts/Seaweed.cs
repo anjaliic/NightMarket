@@ -4,39 +4,35 @@ using UnityEngine;
 
 public class Seaweed : MonoBehaviour
 {
-    public GameObject col1;
-    public GameObject col2;
+    public Transform onigiri;
+    public GameObject riceball;
 
-    public GameObject rice;
-    public Sprite onigiri;
-
-    public bool swiped;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if(swiped == true)
+       if(this.GetComponent<Swipeable>().swiped == true)
         {
-            rice.GetComponent<SpriteRenderer>().sprite = onigiri;
-            rice.GetComponent<Rice>().onigiri = true;
+            Instantiate(onigiri, new Vector3(riceball.transform.position.x,
+                        riceball.transform.position.y, riceball.transform.position.z), Quaternion.identity);
+
             Destroy(this.gameObject);
+            Destroy(riceball);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "rice(Clone)")
+        if (collision.gameObject.name.Contains("riceball"))
         {
-            col1.SetActive(true);
-            col2.SetActive(true);
-            this.GetComponent<DragOnTray>().enabled = false;
-            rice = collision.gameObject;
+            this.GetComponent<Swipeable>().enabled = true;
+            riceball = collision.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.name.Contains("riceball"))
+        {
+            this.GetComponent<Swipeable>().enabled = false;
         }
     }
 

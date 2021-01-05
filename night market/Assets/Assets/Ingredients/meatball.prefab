@@ -146,10 +146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineofFire: 0
   fireDetection: {fileID: 0}
-  dragon: {fileID: 0}
-  count: 0
-  secondstoCook: 3
-  cookedSp: {fileID: 21300000, guid: 8fe0937653bba634cbf1855c7acab0ee, type: 3}
+  seconds: 0
+  cookTime: 3
+  cooked: 0
   firing: 0
   counting: 0
 --- !u!114 &8849497321598334359
@@ -166,6 +165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ricespread: {fileID: 0}
   onRice: 0
+  cooked: 0
+  cookedMeatball: {fileID: 21300000, guid: 8fe0937653bba634cbf1855c7acab0ee, type: 3}
 --- !u!114 &4624996422248145665
 MonoBehaviour:
   m_ObjectHideFlags: 0

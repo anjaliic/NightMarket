@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2693567392056427488}
   - component: {fileID: 2693567392056427491}
   - component: {fileID: 2693567392056427501}
+  - component: {fileID: 6040744429012636243}
   - component: {fileID: 2693567392056427490}
   m_Layer: 0
   m_Name: meatcube
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2693567392056427500}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.69, y: 3.44, z: 0}
+  m_LocalPosition: {x: -7.69, y: 3.44, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -146,6 +147,24 @@ MonoBehaviour:
   draggable: 0
   firstTouch: {x: 0, y: 0}
   touchPosition: {x: 0, y: 0}
+--- !u!114 &6040744429012636243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2693567392056427500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3010ae9d9d8af4eaa5179d2918f842, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mashedState: {fileID: 7070941467902300001, guid: 02778e287c78df243b5f47af028dc60f,
+    type: 3}
+  cubes:
+  - {fileID: 21300000, guid: b134587d57251894f826d4bbac062240, type: 3}
+  - {fileID: 21300000, guid: 7f50d364e3db82045afb6a50ccb0a5b5, type: 3}
+  - {fileID: 21300000, guid: 2ff946dac37ee2646821f7ac7d1278da, type: 3}
 --- !u!114 &2693567392056427490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,5 +183,3 @@ MonoBehaviour:
   temp: 0
   malletHover: 0
   malletDetection: {fileID: 0}
-  mashedState: {fileID: 7070941467902300001, guid: 02778e287c78df243b5f47af028dc60f,
-    type: 3}

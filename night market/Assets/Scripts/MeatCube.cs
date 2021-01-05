@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class MeatCube : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Transform tr;
+    public Transform mashedState;
+    SpriteRenderer spRend;
+
+    public List<Sprite> cubes;
+
     void Start()
     {
-        
+        spRend = GetComponent<SpriteRenderer>();
+        tr = GetComponent<Transform>();
+        spRend.sprite = cubes[Random.Range(1, cubes.Count)];
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(this.GetComponent<Mashable>().mashed == true)
+        {
+            Instantiate(mashedState, new Vector3(tr.position.x, tr.position.y, tr.position.z), Quaternion.identity);
+            Destroy(this.gameObject);
+        }
     }
 }
