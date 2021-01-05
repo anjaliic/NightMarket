@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3236652699253668067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5107517, y: -2.002972, z: 10}
+  m_LocalPosition: {x: -7.5107517, y: -2.002972, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -163,6 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   result: {fileID: 3877889506294763437, guid: 6f18eed1694753f4fb4c5c0b11a8dc6a, type: 3}
   swipable: 0
+  swiped: 0
   riceball: {fileID: 0}
 --- !u!114 &9208200495812268713
 MonoBehaviour:
