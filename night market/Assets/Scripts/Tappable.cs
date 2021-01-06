@@ -6,6 +6,8 @@ public class Tappable : MonoBehaviour
 {
     Collider2D col;
 
+    public Collider2D touchedCollider;
+
     public bool tapped;
     public bool tappable;
 
@@ -22,7 +24,7 @@ public class Tappable : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
-            Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
+            touchedCollider = Physics2D.OverlapPoint(touchPosition);
             if (touch.phase == TouchPhase.Began && col == touchedCollider)
             {
                 if (tappable == true)
@@ -30,6 +32,10 @@ public class Tappable : MonoBehaviour
                     Lean.Touch.LeanTouch.OnFingerTap += (x) => tapped = true;
                 }
             } 
+            if(touch.phase == TouchPhase.Ended)
+            {
+                touchedCollider = null;
+            }
         }
     }
 }

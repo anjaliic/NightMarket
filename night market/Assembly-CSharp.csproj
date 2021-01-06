@@ -97,6 +97,7 @@
     <Compile Include="Assets\Scripts\old_Scripts\Tapping.cs" />
     <Compile Include="Assets\Scripts\old_Scripts\Tray.cs" />
     <Compile Include="Assets\Scripts\old_Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\OpenScene.cs" />
     <Compile Include="Assets\Scripts\RiceBowl.cs" />
     <Compile Include="Assets\Scripts\RiceSpread.cs" />
     <Compile Include="Assets\Scripts\Swipeable.cs" />
