@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
-    Vector3 startingPos;
+    public Vector3 startingPos;
 
     Transform tr;
     Collider2D col;

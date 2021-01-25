@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Mashable.cs" />
     <Compile Include="Assets\Scripts\Meatball.cs" />
     <Compile Include="Assets\Scripts\MeatCube.cs" />
+    <Compile Include="Assets\Scripts\MeatPile.cs" />
     <Compile Include="Assets\Scripts\mMix.cs" />
     <Compile Include="Assets\Scripts\old_Scripts\BreatheFire.cs" />
     <Compile Include="Assets\Scripts\old_Scripts\ButtonManager.cs" />
@@ -102,9 +103,12 @@
     <Compile Include="Assets\Scripts\RiceSpread.cs" />
     <Compile Include="Assets\Scripts\Swipeable.cs" />
     <Compile Include="Assets\Scripts\Tappable.cs" />
+    <Compile Include="Assets\Scripts\Trash.cs" />
     <Compile Include="Assets\Scripts\TrayManager.cs" />
     <Compile Include="Assets\Scripts\UI\NavButtonManager.cs" />
     <Compile Include="Assets\Scripts\UI\NavButtons.cs" />
+    <Compile Include="Assets\Scripts\UI\RecipePage.cs" />
+    <Compile Include="Assets\Scripts\UI\RecipePageButton.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

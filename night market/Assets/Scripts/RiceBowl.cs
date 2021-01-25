@@ -11,9 +11,12 @@ public class RiceBowl : MonoBehaviour
 
     public bool emptied;
 
+    Vector3 startingPos;
+
     void Start()
     {
         spRend = GetComponent<SpriteRenderer>();
+        startingPos = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
     }
 
     void Update()
