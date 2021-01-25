@@ -15,11 +15,19 @@ public class RandomCustomer : MonoBehaviour
 
     public bool hover;
 
+    public GameObject servedFood;
+
     public Color targetColor = new Color(1, 1, 1, 1);
     Vector3 targetSize = new Vector3(1, 1, 1);
 
+    public Color startingColor;
+    Vector3 startingSize;
+
     void Start()
     {
+        startingColor = GetComponent<SpriteRenderer>().color;
+        startingSize = GetComponent<Transform>().localScale;
+
         spRend = GetComponent<SpriteRenderer>();
         tr = GetComponent<Transform>();
 
@@ -36,6 +44,10 @@ public class RandomCustomer : MonoBehaviour
 
             if (touch.phase == TouchPhase.Ended && hover == true)
             {
+                Destroy(servedFood);
+                spRend.sprite = null;
+                spRend.color = startingColor;
+                tr.localScale = startingSize;
                 NewCustomer();              
             }
         }
@@ -70,6 +82,7 @@ public class RandomCustomer : MonoBehaviour
     {
         if(collision.gameObject.tag == "done")
         {
+            servedFood = collision.gameObject;
             hover = true;
         }
     }
@@ -78,6 +91,7 @@ public class RandomCustomer : MonoBehaviour
     {
         if (collision.gameObject.tag == "done")
         {
+            servedFood = null;
             hover = false;
         }
     }

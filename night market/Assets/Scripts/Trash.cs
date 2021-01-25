@@ -7,6 +7,8 @@ public class Trash : MonoBehaviour
     public bool itemHover;
     public GameObject item;
 
+    public bool touching;
+
     public Sprite openMouth;
     public Sprite closeMouth;
 
@@ -30,6 +32,7 @@ public class Trash : MonoBehaviour
 
         if (Input.touchCount > 0)
         {
+            touching = true;
             Touch touch = Input.GetTouch(0);
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
@@ -40,17 +43,27 @@ public class Trash : MonoBehaviour
                 spRend.sprite = closeMouth;
             }
         }
+        else
+        {
+            touching = false;
+        }
     }
 
-    private void OnTriggerEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        item = collision.gameObject;
-        itemHover = true;
+        if (touching == true)
+        {
+            item = collision.gameObject;
+            itemHover = true;
+        }
     }
 
-    private void OnTriggerExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        item = null;
-        itemHover = false; 
+        if (touching == true)
+        {
+            item = null;
+            itemHover = false;
+        }
     }
 }
