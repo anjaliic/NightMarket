@@ -5,15 +5,7 @@ using UnityEngine.UI;
 
 public class NotesTab : MonoBehaviour
 {
-    public int pageToJump;
-
-    void Start()
-    {
-        Button btn = GetComponent<Button>();
-        btn.onClick.AddListener(OnTabClick);
-    }
-
-    void OnTabClick()
+    public void OnTabClick(int pageToJump)
     {
         RecipePage.Instance.currentPage = pageToJump;
         Debug.Log("clicked");

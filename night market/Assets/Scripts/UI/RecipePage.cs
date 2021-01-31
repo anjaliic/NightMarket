@@ -21,6 +21,7 @@ public class RecipePage : MonoBehaviour
     }
 
     public int currentPage = 0;
+    public GameObject ChefsNotes;
     Image image;
 
     public List<Sprite> pageSprites;
@@ -33,15 +34,23 @@ public class RecipePage : MonoBehaviour
 
     void Update()
     {
-        if(GetComponent<Swipeable>().swiped == true)
+        image.sprite = pageSprites[currentPage];
+
+        if (GetComponent<Swipeable>().swiped == true)
         {
             if(currentPage < pageSprites.Count)
             {
                 currentPage++;
-                image.sprite = pageSprites[currentPage];
+                
             }
             
             GetComponent<Swipeable>().swiped = false;
+        }
+
+        if(currentPage == -1)
+        {
+            currentPage = 0;
+            ChefsNotes.SetActive(false);
         }
     }
 }

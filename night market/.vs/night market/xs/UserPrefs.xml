@@ -1,13 +1,15 @@
 ﻿<Properties StartupConfiguration="{11090C18-AEF5-82D8-0EEC-83FBE421B1BE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/NotesTab.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/CloseNotes.cs">
     <Files>
       <File FileName="Assets/Scripts/ChefsNotes.cs" Line="30" Column="35" />
-      <File FileName="Assets/Scripts/DoubleTap.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/_GameManager.cs" Line="23" Column="6" />
-      <File FileName="Assets/Scripts/mMix.cs" Line="7" Column="5" />
-      <File FileName="Assets/Scripts/UI/RecipePage.cs" Line="27" Column="1" />
+      <File FileName="Assets/Scripts/DoubleTap.cs" />
+      <File FileName="Assets/Scripts/_GameManager.cs" />
+      <File FileName="Assets/Scripts/mMix.cs" />
+      <File FileName="Assets/Scripts/UI/RecipePage.cs" Line="33" Column="6" />
       <File FileName="Assets/Scripts/Swipeable.cs" Line="33" Column="1" />
-      <File FileName="Assets/Scripts/UI/NotesTab.cs" Line="7" Column="23" />
+      <File FileName="Assets/Scripts/UI/NotesTab.cs" Line="8" Column="5" />
+      <File FileName="Assets/Scripts/UI/CloseNotes.cs" Line="11" Column="37" />
+      <File FileName="Assets/Scripts/Draggable.cs" Line="35" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +18,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="UI" expanded="True">
-                  <Node name="NotesTab.cs" selected="True" />
+                  <Node name="CloseNotes.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -27,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="96fb8a16-bf91-47a7-ac19-33b30f79e492" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="55a4798f-6f4e-41ac-b8e3-8e50daef40a3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

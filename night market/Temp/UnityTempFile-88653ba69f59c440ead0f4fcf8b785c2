@@ -352,4 +352,5 @@
 "Assets/Scripts/TrayManager.cs"
 "Assets/Scripts/UI/NavButtonManager.cs"
 "Assets/Scripts/UI/NavButtons.cs"
+"Assets/Scripts/UI/NotesTab.cs"
 "Assets/Scripts/UI/RecipePage.cs"

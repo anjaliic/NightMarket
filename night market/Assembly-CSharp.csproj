@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scripts\Tappable.cs" />
     <Compile Include="Assets\Scripts\Trash.cs" />
     <Compile Include="Assets\Scripts\TrayManager.cs" />
+    <Compile Include="Assets\Scripts\UI\CloseNotes.cs" />
     <Compile Include="Assets\Scripts\UI\NavButtonManager.cs" />
     <Compile Include="Assets\Scripts\UI\NavButtons.cs" />
     <Compile Include="Assets\Scripts\UI\NotesTab.cs" />
